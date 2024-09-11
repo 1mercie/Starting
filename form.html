@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="tailwind.js"></script>
+    <title>Document</title>
+    <style>
+        .container-custom {
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .left-section h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .right-section {    
+            padding: 60px;
+            max-width: 600px;
+            flex: 1;
+        }
+        .right-section h3 {
+            font-size: 2rem;  
+            margin-bottom: 30px;
+        }
+        .b{
+            color: blue;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-serif">
+    <div class="container-custom flex h-100vh justify-center align-center">
+        <div class="row w-100 flex">
+            <!-- Left Section -->
+            <div class="col-md-6 left-section align-center flex-1 flex-col p-5 flex bg-blue-900">
+                <h2 class="text-white text-center mt-24">“ <br>Let's Make<br>it Happen<br>Together!</h2>
+            </div> 
+            <div class="col-md-6 right-section bg-yellow-400">      
+                    <p class="color:blue"><b class="b">CO</b>. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Already have An account? <a href="#" class="b"><u>sinin here!</u></a></p> <br><br> 
+                <h3 class="font-weight-bold mx-5">Create An Account</h3>
+            <form action="" method="post" class="form-row ">
+                <div class="flex">
+                    <div>
+                        <label for="fname">First Name</label><br>
+                         <input type="text" class="form-control p-1 mx-1 rounded-none"name="first_name" required><br><br>
+                         <label for="email">email</label><br>
+                         <input type="text" class="form-control" name="email" required><br><br>
+                         <label for="password">create password</label><br>
+                         <input type="text" class="form-control" name="password" required><br><br>
+                    </div>
+                    <div>
+                        <label for="lname">last Name</label><br>
+                         <input type="text" class="form-control" name="last_name" required><br><br>
+                         <label for="address">address</label><br>
+                         <input type="text" class="form-control" name="address" required><br><br>
+                         <label for=" c_password">comfirm  password</label><br>
+                         <input type="c_password" class="form-control" name="comfirm password" required><br><br>
+                    </div>
+                </div>
+                <input type="checkbox" class="form-control" name="check[]">
+                     <label for="check">creating your account and you accepting <a href="">terms & conditions.</a></label><br><br> 
+                         <div class="flex">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-block mt-4 bg-blue-900 text-white">Create Account</button> 
+                                <button type="button" class="btn btn-facebook btn-block mt-3 bg-white text-black">Sign up Using Facebook</button>
+                            </div>
+                            <div>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button type="button" class="btn btn-twitter btn-block mt-3 m-1 bg-white">Sign up Using Twitter</button><br><br><br>
+                            </div>
+                         </div>
+                         <div>&copy copyright 2024 company inc ltd</div>    
+                          
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
